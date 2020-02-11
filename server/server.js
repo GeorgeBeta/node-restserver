@@ -5,8 +5,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 require('./config/config');
-
-app.use(require('./routes/usuario'));
+app.use(require('./routes/index'));
 
 app.get('/', function(req, res) {
     res.json('Hola mundo');
